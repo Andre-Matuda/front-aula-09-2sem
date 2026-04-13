@@ -1,13 +1,5 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-<<<<<<< HEAD
-import './index.css'
-import App from './App.tsx'
-
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <App />
-=======
 import App from './App.tsx'
 
 //Importando os componentes de rotas:
@@ -31,6 +23,5 @@ const router = createBrowserRouter([{
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
    <RouterProvider router={router}/>
->>>>>>> daf039f704a5bef491795bf2e044e55ca6174a9d
   </StrictMode>,
 )
