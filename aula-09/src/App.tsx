@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
@@ -119,3 +120,20 @@ function App() {
 }
 
 export default App
+=======
+import { Outlet } from "react-router-dom";
+import Cabecalho from "./components/Cabecalho/Cabecalho";
+import Rodape from "./components/Rodape/Rodape";
+
+export default function App() {
+  return (
+    <div className="flex flex-col justify-between w-screen h-screen">
+      <Cabecalho/>
+      
+         <Outlet/> {/* Renderiza o componente da rota filha aqui */}
+       
+       <Rodape/>
+    </div>
+  );
+}
+>>>>>>> daf039f704a5bef491795bf2e044e55ca6174a9d
